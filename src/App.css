@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.app-сontainer{
+  background: white;
+  width: 700px;
+  height: 700px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: 5px;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.drag-field{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 45%;
+  height: auto;
+  justify-content: top;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 5px;
+  grid-gap: 10px;
+  border: 3px dotted rgb(208, 208, 208);
+  border-radius: 10px;
+}
+
+.drop-field{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: auto;
+  justify-content: top;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 5px;
+  grid-gap: 10px;
+  border: 3px dotted rgb(208, 208, 208);
+  border-radius: 10px;
+}
+
+.output{
+  background: rgb(245, 245, 245);
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px rgba(68, 68, 68, 0.25), 0 2px 2px rgba(57, 57, 57, 0.22);
+  outline: none;
+}
+
+.operators{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid white;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px rgba(68, 68, 68, 0.25), 0 2px 2px rgba(57, 57, 57, 0.22);
+  grid-gap: 3px;
+}
+
+.numbers{
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  border: 3px solid white;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px rgba(68, 68, 68, 0.25), 0 2px 2px rgba(57, 57, 57, 0.22);
+}
+
+.numbers-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  grid-gap: 3px;
+}
+
+
+
+button{
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+.zero-button{
+  flex-grow: 2.2;
+}
+
+.equals-button-container{
+  display: flex;
+  border: 3px solid white;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px rgba(68, 68, 68, 0.25), 0 2px 2px rgba(57, 57, 57, 0.22);
+  
+}
+
+.equals-button{
+  height: 60px;
+  background-color: darkslateblue;
+  border: 0px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
